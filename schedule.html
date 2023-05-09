@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeamOCA-SCHEDULE</title>
-</head>
+  </head>
 
-<body>
-    SCHEDULE
-</body>
+  <body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <p>こんにちは1</p>
+    <p>こんにちは2</p>
+    <span>おはよう1</span>
+    <span>おはよう2</span>
+    <div class="oya">
+      oya
+      <div class="ko">ko</div>
+    </div>
+    <div class="konasi">konasi</div>
+  </body>
 
+  <style>
+    div {
+    }
+
+    p {
+      background-color: green;
+      width: 50%;
+      height: 50px;
+    }
+
+    span {
+      background-color: blue;
+      width: 500px;
+      height: 50%;
+    }
+
+    .oya {
+      background-color: aqua;
+    }
+
+    .ko {
+      background-color: pink;
+      width: 50%;
+    }
+
+    .konasi {
+      background-color: yellow;
+      width: 50vw;
+      /*ビューポート(画面の最大幅)のwidth */
+    }
+  </style>
+
+  <div class="container">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 50%;
+
+        background-color: green;
+      }
+    </style>
+  </div>
 </html>
