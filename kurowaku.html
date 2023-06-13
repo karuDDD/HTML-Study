@@ -15,7 +15,7 @@
       <img
         src="img\member\member_01.jpeg"
         alt="logo1"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member1</p>
@@ -24,7 +24,7 @@
       <img
         src="img\member\member_02.jpeg"
         alt="logo2"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member2</p>
@@ -33,7 +33,7 @@
       <img
         src="img\member\member_03.jpeg"
         alt="logo3"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member3</p>
@@ -42,7 +42,7 @@
       <img
         src="img\member\member_04.jpeg"
         alt="logo4"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member4</p>
@@ -51,7 +51,7 @@
       <img
         src="img\member\member_05.jpeg"
         alt="logo5"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member5</p>
@@ -60,7 +60,7 @@
       <img
         src="img\member\member_06.jpeg"
         alt="logo6"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member6</p>
@@ -69,7 +69,7 @@
       <img
         src="img\member\member_07.jpeg"
         alt="logo7"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member7</p>
@@ -78,7 +78,7 @@
       <img
         src="img\member\member_08.jpeg"
         alt="logo8"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member8</p>
@@ -87,7 +87,7 @@
       <img
         src="img\member\member_09.jpeg"
         alt="logo9"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member9</p>
@@ -96,11 +96,72 @@
       <img
         src="img\member\member_10.jpeg"
         alt="logo10"
-        style="width: 200px"
+        style="width: 250px"
         style="position: center"
       />
       <p>member10</p>
     </div>
+  </div>
+
+  <div class="games-container">
+    <div class="game">
+      <img
+        src="img\game\game_01.jpeg"
+        alt="game1"
+        style="width: 250px"
+        style="position: center"
+      />
+      <p>game1</p>
+    </div>
+    <div class="game">
+      <img
+        src="img\game\game_02.jpeg"
+        alt="game1"
+        style="width: 250px"
+        style="position: center"
+      />
+      <p>game2</p>
+    </div>
+    <div class="game">
+      <img
+        src="img\game\game_03.jpeg"
+        alt="game1"
+        style="width: 250px"
+        style="position: center"
+      />
+      <p>game3</p>
+    </div>
+    <div class="game">
+      <img
+        src="img\game\game_04.jpeg"
+        alt="game1"
+        style="width: 250px"
+        style="position: center"
+      />
+      <p>game4</p>
+    </div>
+  </div>
+
+  <div class="contacts-container">
+    <form>
+      <div><input type="text" name="名前" /></div>
+
+      <div>
+        <select name="性別">
+          <option value="1">無回答</option>
+          <option value="2">男性</option>
+          <option value="3">女性</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="text" />
+
+        <textarea name="テキストエリア" cols="30" rows="10"></textarea>
+
+        <input type="submit" name="名前" value="送信" />
+      </div>
+    </form>
   </div>
 
   <style>
@@ -116,22 +177,46 @@
     .members-container {
       display: flex;
       justify-content: space-around;
-      height: 400px;
       align-items: center;
       flex-wrap: wrap;
-      background-color: rgb(9, 243, 212);
+      background-color: white;
     }
 
     .member {
       background-color: black;
       color: white;
-      width: 250px;
-      padding-top: 30px;
-      margin: 40px;
+      width: 300px;
+      padding-top: 50px;
+      margin: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+
+    .games-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(1, 1, 37);
+    }
+
+    .game {
+      background-color: antiquewhite;
+      color: black;
+      width: 300px;
+      padding-top: 50px;
+      margin: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contacts-container {
+      background-color: pink;
+      height: 500px;
     }
   </style>
 </html>
