@@ -7,9 +7,12 @@
   </head>
 
   <body></body>
-  <header>header</header>
-  <div class="disdcription-container">disdcription</div>
 
+  <header><img src="img\logo.png" alt="炎" width="50px" /></header>
+
+  <div class="disdcription-container">TEAMOCA</div>
+
+  <p>MEMBER<br /></p>
   <div class="members-container">
     <div class="member">
       <img
@@ -144,35 +147,51 @@
 
   <div class="contacts-container">
     <form>
-      <div><input type="text" name="名前" /></div>
-
       <div>
-        <select name="性別">
-          <option value="1">無回答</option>
-          <option value="2">男性</option>
-          <option value="3">女性</option>
-        </select>
+        <p>
+          名前<br />
+          <input type="text" name="名前" />
+        </p>
       </div>
 
       <div>
-        <input type="text" />
-
-        <textarea name="テキストエリア" cols="30" rows="10"></textarea>
-
-        <input type="submit" name="名前" value="送信" />
+        <p>
+          性別 <br />
+          <select name="性別">
+            <option value="1">無回答</option>
+            <option value="2">男性</option>
+            <option value="3">女性</option>
+          </select>
+        </p>
       </div>
+
+      <div>
+        <p>
+          E-mail<br />
+          <input type="text" />
+        </p>
+      </div>
+
+      <div>
+        <p>
+          お問い合わせ<br />
+          <textarea name="テキストエリア" cols="30" rows="10"></textarea>
+        </p>
+      </div>
+
+      <div><input type="submit" name="名前" value="送信" /></div>
     </form>
   </div>
 
   <style>
     header {
-      background-color: red;
+      background-color: rgb(28, 27, 65);
       height: 50px;
     }
 
     .disdcription-container {
-      background-color: blue;
       height: 100px;
+      background-image: url(C:\Users\cre\Documents\HTML-Study\img\about.jpg);
     }
     .members-container {
       display: flex;
