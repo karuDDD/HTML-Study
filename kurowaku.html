@@ -8,11 +8,12 @@
 
   <body></body>
 
-  <header><img src="img\logo.png" alt="炎" width="50px" /></header>
+  <header><img src="img\logo.png" alt="炎" width="100px" /></header>
 
-  <div class="disdcription-container">TEAMOCA</div>
+  <div class="disdcription-container">TeamOCA</div>
 
-  <p>MEMBER<br /></p>
+  <div class="member-content"></div>
+  <p class="font-color-primary">MEMBER</p>
   <div class="members-container">
     <div class="member">
       <img
@@ -106,42 +107,45 @@
     </div>
   </div>
 
-  <div class="games-container">
-    <div class="game">
-      <img
-        src="img\game\game_01.jpeg"
-        alt="game1"
-        style="width: 250px"
-        style="position: center"
-      />
-      <p>game1</p>
-    </div>
-    <div class="game">
-      <img
-        src="img\game\game_02.jpeg"
-        alt="game1"
-        style="width: 250px"
-        style="position: center"
-      />
-      <p>game2</p>
-    </div>
-    <div class="game">
-      <img
-        src="img\game\game_03.jpeg"
-        alt="game1"
-        style="width: 250px"
-        style="position: center"
-      />
-      <p>game3</p>
-    </div>
-    <div class="game">
-      <img
-        src="img\game\game_04.jpeg"
-        alt="game1"
-        style="width: 250px"
-        style="position: center"
-      />
-      <p>game4</p>
+  <div class="game-content">
+    <p class="font-color-primary">GAME TITLE</p>
+    <div class="games-container">
+      <div class="game">
+        <img
+          src="img\game\game_01.jpeg"
+          alt="game1"
+          style="width: 250px"
+          style="position: center"
+        />
+        <p>game1</p>
+      </div>
+      <div class="game">
+        <img
+          src="img\game\game_02.jpeg"
+          alt="game1"
+          style="width: 250px"
+          style="position: center"
+        />
+        <p>game2</p>
+      </div>
+      <div class="game">
+        <img
+          src="img\game\game_03.jpeg"
+          alt="game1"
+          style="width: 250px"
+          style="position: center"
+        />
+        <p>game3</p>
+      </div>
+      <div class="game">
+        <img
+          src="img\game\game_04.jpeg"
+          alt="game1"
+          style="width: 250px"
+          style="position: center"
+        />
+        <p>game4</p>
+      </div>
     </div>
   </div>
 
@@ -186,13 +190,20 @@
   <style>
     header {
       background-color: rgb(28, 27, 65);
-      height: 50px;
+      height: 100px;
     }
 
     .disdcription-container {
-      height: 100px;
-      background-image: url(C:\Users\cre\Documents\HTML-Study\img\about.jpg);
+      height: 300px;
+      background-image: url(img/about.jpg);
+      color: aquamarine;
+      font-size: 50px;
     }
+
+    .member-content {
+      background-color: white;
+    }
+
     .members-container {
       display: flex;
       justify-content: space-around;
@@ -213,12 +224,20 @@
       flex-direction: column;
     }
 
+    .game-content {
+      background-color: rgb(1, 1, 37);
+    }
+
     .games-container {
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
-      background-color: rgb(1, 1, 37);
+    }
+
+    .font-color-primary {
+      color: rgb(73, 184, 147);
+      font-size: 30px;
     }
 
     .game {
